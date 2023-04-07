@@ -1,0 +1,11 @@
+enseignant : authentification - note par matiere
+delib etud clicable
+cloturer la session (à verifier finaliser)
+délibération semestre - annuelle - MODULE
+statistiques
+- délibérations : note non disponible par arpport à l'absence. ABS : attribut comme une note
+- liste des profs : vacataire à éliminer
+- accès au serveur vierge : installation
+maquettes filiere à importer
+
+l'icone statistiques au projet : Effectif des étudiants Statistiques en nombres sexe par filières nombre d admis d ajournés ....

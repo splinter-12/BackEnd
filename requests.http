@@ -1,0 +1,5 @@
+###
+GET http://localhost:8080/students/byCode/21518358
+
+###
+GET http://localhost:8080/absencesByStudentCode/21518358
