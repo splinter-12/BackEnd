@@ -12,4 +12,5 @@ public interface TeacherService {
     List<Teacher> getAll();
     void assignTeacherToModule(String teacherId, Long moduleId);
     void unassignTeacherFromModule(String teacherId, Long moduleId);
+    void saveAll(List<Teacher> teachers);
 }

@@ -11,6 +11,7 @@ import ma.ensetm.project.security.service.SecurityService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
@@ -78,5 +79,13 @@ public class TeacherServiceImpl implements TeacherService {
         Element element = elementRepository.findById(moduleId).get();
         teacher.getElementModules().remove(element);
         teacherRepository.save(teacher);
+    }
+    @Override
+    public void saveAll(List<Teacher> teachers) {
+        List<Teacher> savedTeachers = new ArrayList<>();
+        for (Teacher teacher : teachers) {
+            Teacher savedTeacher = teacherRepository.save(teacher);
+            savedTeachers.add(savedTeacher);
+        }
     }
 }
